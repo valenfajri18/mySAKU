@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".Transfer2Activity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photoProfile"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/profil_placeholder"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="15dp"
+            android:layout_toRightOf="@+id/photoProfile"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4sp"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtHp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/primary"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@color/gray"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Nominal"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:paddingHorizontal="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="10000"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        android:layout_marginTop="7dp"
+        android:inputType="number"
+        android:maxLength="7"
+        android:background="@drawable/bg_grey_primary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Nominal"
+        android:textSize="14sp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/primary"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn10k"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_stroke_depo"
+                android:textColorHint="@color/primary"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:hint="10,000" />
+
+            <TextView
+                android:id="@+id/btn20k"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_stroke_depo"
+                android:textColorHint="@color/primary"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:hint="20,000" />
+
+            <TextView
+                android:id="@+id/btn50k"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_stroke_depo"
+                android:textColorHint="@color/primary"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:hint="50,000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn100k"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_stroke_depo"
+                android:textColorHint="@color/primary"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:hint="100,000" />
+
+            <TextView
+                android:id="@+id/btn500k"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_stroke_depo"
+                android:textColorHint="@color/primary"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:hint="500,000" />
+
+            <TextView
+                android:id="@+id/btn1000k"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_stroke_depo"
+                android:textColorHint="@color/primary"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:hint="1,000,000" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:text="Tambah Catatan"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/primary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_grey_primary"
+        android:paddingHorizontal="15dp"
+        android:layout_marginTop="7dp">
+
+        <ImageView
+            android:id="@+id/logoKalender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_note"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"/>
+
+        <EditText
+            android:id="@+id/editCatatan"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="contoh: bayar pulsa "
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/logoKalender"
+            android:background="@android:color/transparent"
+            android:textColor="@color/primary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnLanjut"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_primary"
+            android:text="Lanjut"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/primary" />
+    </RelativeLayout>
+
+</LinearLayout>
